@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week4 Assignment</title>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image:url(image31.jpg) ;
+       background-position: center;
+       background: linear-gradient(blue);
+       bottom: auto;
+    }
+    menu{
+        background-color: black;
+        height: 80px;
+    }
+     ul{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    menu ul li{
+        list-style: none;
+        font-size:1.25em;
+        font-weight: 400;
+        color: white;
+    }
+    li a{
+       color: white;  
+    }
+    menu ul li:hover{
+        text-decoration: underline solid red;
+        cursor: pointer;
+        transform: translateX(20px);
+        transition: 1s;
+    }
+     h2{
+        margin-top: 40px;
+        text-align: center;
+        color:yellow;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    main{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin:50px 0 110px 0;
+    }
+   div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+    border: solid 3px white;
+    text-align: center;
+   }
+     strong{
+        font-size: 1.30em;
+        text-decoration: underline green;
+    }
+    ol li{
+        font-size: 1.10em;
+        color: blue;
+    }
+    a{
+        color: red;
+        text-decoration: none;
+    }
+    footer{
+        background-color: black;
+        height: 80px;
+        position: absolute;
+        bottom: auto;
+        width: 100%;
+    }
+    p{
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .d1{
+     width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 10px;
+    border: solid 3px white;
+    text-align: center;  
+    }
+    .d2{
+        background-color: yellow;
+    }
+    .d3{
+        background-color:black;
+        color: white;
+    }
+       @keyframes myAnimation{
+        1%{
+            background-color: gold;
+            top:-200px;
+            left: 0px;
+        }
+        50%{
+            background-color: green;
+            top: 0px;
+        }
+        100%{
+            background-color: cornsilk;
+            left: 200px;
+        }
+       } 
+       .d1{
+            animation: myAnimation 2s linear 1s  alternate;
+            position: relative;
+       }
+
+
+        @keyframes myAnimation2{
+            1%{
+            background-color: gold;
+            top:-200px;
+            left: 0px;
+        }
+        50%{
+            background-color: goldenrod;
+            top: 0px;
+        }
+        100%{
+            background-color: cornsilk;
+            right: 220px;
+        }
+
+            }
+        
+       .d4{
+        animation: myAnimation2 2s ;
+        transition: 2s;
+        animation-delay: 4s;
+            position: relative;
+       }
+/*@mobile device*/
+       @media screen and (max-width:500px){
+     .d1 ,.d2 ,.d3 ,.d4{
+    max-width: 70px;
+    height: 70px;
+    background-color: blue;
+    margin: 10px;
+    border: solid 3px white;
+    text-align: center;  
+    }
+    .d2{
+        background-color: yellow;
+    }
+    .d3{
+        background-color:black;
+        color: white;
+    }
+    h2{
+        font-size: 1.0em;
+    }
+    menu ul{
+        flex-wrap: wrap;
+    }
+    menu ul li{
+        font-size: 1.0em;
+       
+    }
+   
+       }
+       /*laptop*/
+       @media screen and(min-width:700px) {
+        menu{
+        background-color: black;
+        height: 80px;
+    }
+     ul{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    menu ul li{
+        list-style: none;
+        font-size:1.25em;
+        font-weight: 400;
+        color: white;
+    }
+    li a{
+       color: white;  
+    }
+}
+     /*tablt*/
+     @media screen and (max-width:800px) {
+      
+        .d1 ,.d2 ,.d3 ,.d4{
+    max-width: 130px;
+    height: 130px;
+    background-color: blue;
+    margin: 10px;
+    border: solid 3px white;
+    text-align: center;  
+    }
+        .d2{
+        background-color: purple;
+    }
+    .d3{
+        background-color:pink;
+        color: white;
+    }  menu{
+        background-color: black;
+        height: 80px;
+    }
+     ul{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    menu ul li{
+        list-style: none;
+        font-size:1.25em;
+        font-weight: 400;
+        color: white;
+    }
+    li a{
+       color: white;  
+    }
+    main{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin:50px 0 270px 0;
+    }
+       }
+</style>
+</head>
+<body>
+    <menu>
+        <ul>
+            <li>Home</li>
+            <li>Blog</li>
+            <li><a href="create.html" target="_blank">Register</a></li>
+            <li>login</li>
+            <li>Contact</li>
+        </ul>
+    </menu>
+    <header>
+        <h2> Welcome to 3MTT Training Program, Bauchi State Branch....</h2>
+    </header>
+   <main>
+    <div class="d1">Menu</div>
+    <div class="d2">Nav</div>
+    <div class="d3">Header</div>
+    <div class="d4">SideBar</div>
+   </main>
+
+    <footer>
+        <p>Designed by Musa Abdulaziz @3mtt Program &copy All Right Reserved 2024 </p>
+    </footer>
+    
+</body>
+</html>

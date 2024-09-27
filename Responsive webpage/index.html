@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week3 Assignment</title>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image:url(image31.jpg) ;
+       background-position: center;
+       background: linear-gradient(blue);
+    }
+    menu{
+        background-color: black;
+        height: 80px;
+    }
+     ul{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    menu ul li{
+        list-style: none;
+        font-size:1.25em;
+        font-weight: 400;
+        color: white;
+    }
+    li a{
+       color: white;  
+    }
+    menu ul li:hover{
+        text-decoration: underline solid red;
+        cursor: pointer;
+        transform: translateX(20px);
+        transition: 1s;
+    }
+     h2{
+        margin-top: 40px;
+        text-align: center;
+        color:yellow;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    main{
+        background-color:rgba(245, 245, 245, 0.815);
+        width: 300px;
+        padding: 20px;
+        border-radius: 4px;
+        float: right;
+        border: groove;
+    }
+     strong{
+        font-size: 1.30em;
+        text-decoration: underline green;
+    }
+    ol li{
+        font-size: 1.10em;
+        color: blue;
+    }
+    a{
+        color: red;
+        text-decoration: none;
+    }
+    img{
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: solid brown 5px;
+        margin: -30px 0px 0px 5px;
+    }
+    footer{
+        background-color: black;
+        height: 80px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+    p{
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <menu>
+        <ul>
+            <li>Home</li>
+            <li>Blog</li>
+            <li><a href="create.html" target="_blank">Register</a></li>
+            <li>login</li>
+            <li>Contact</li>
+        </ul>
+    </menu>
+    <header>
+        <h2> Welcome to 3MTT Training Program, Bauchi State Branch....</h2>
+    </header>
+    <img src="aziz.jpg" alt="An image of Kingaziz">
+    <main>
+        <strong>Our Programs as follows...</strong>
+        <ol>
+           <li>Software Development</li>
+           <li>UI/UX Design</li>
+           <li>Game Development</li>
+           <li>Machine learning</li>
+        </ol>
+        <small>For more information visit our portal via the link below</small>
+        <a href="https://3mtt.nitda.gov.ng/" target="_blank">click on 3MTT for more details....</a>
+    </main>
+
+
+    <footer>
+        <p>Designed by Musa Abdulaziz @3mtt Program &copy All Right Reserved 2024 </p>
+    </footer>
+    
+</body>
+</html>
